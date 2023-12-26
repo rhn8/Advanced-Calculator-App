@@ -1,0 +1,1 @@
+C:\Users\Ruhan\AndroidStudioProjects\AdvancedCalculatorApp\opencv47\sdk\build\intermediates\cxx\Debug\s4o1b683\obj\x86

@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlevelCalc">
+
+    <LinearLayout
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toTopOf="@id/viewflipper">
+    <!-- Main display for calculator -->
+
+    <!-- Input text box -->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:id="@+id/input_alevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toTopOf="@+id/solution"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/solution_alevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="25dp"
+        android:text=""
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@id/keyboard_alevel_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688" />
+
+    </LinearLayout>
+        <!-- Layout for the extra buttons keyboard-->
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/keyboard_alevel_1"
+        >
+
+    <LinearLayout
+        android:id="@+id/keyboard_alevel_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/keyboard_alevel_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_Mat"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="98dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/matrix"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#BE22B6E3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_integral"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="72dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/integral"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:backgroundTint="#BE22B6E3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_pow"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="72dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/power"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+
+                app:backgroundTint="#BE22B6E3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_x"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="72dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/x"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                app:backgroundTint="#BE22B6E3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_ln"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="97dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/ln"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                app:backgroundTint="#BE22B6E3" />
+
+        </LinearLayout> <!-- For matrices and calculus -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_inv"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="98dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/inv"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#BE22B6E3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_sin"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="72dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/sin"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                app:backgroundTint="#BE22B6E3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_cos"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="72dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/cos"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                app:backgroundTint="#BE22B6E3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_tan"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="72dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/tan"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                app:backgroundTint="#BE22B6E3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_hyp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="97dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/hyp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#BE22B6E3" />
+
+        </LinearLayout> <!-- Sin, Cos and Tan and inverse-->
+
+
+
+    </LinearLayout> <!--Contains sin, cos ,tan-->
+
+    <LinearLayout
+            android:id="@+id/keyboard_alevel_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/keyboard_alevel_1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_Mat1"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="98dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/matrix"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_derivative"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/derivative"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_log"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/log"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_x1"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/x"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_e"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="97dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/e"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+            </LinearLayout> <!-- For matrices and calculus -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_inv1"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="98dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/inv"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:backgroundTint="#BE003142" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_arcsin"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/arcsin"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_arccos"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/arccos"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_arctan"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/arctan"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_hyp1"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="97dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/hyp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:backgroundTint="#BE22B6E3" />
+
+            </LinearLayout> <!-- Sin, Cos and Tan and inverse-->
+
+
+
+        </LinearLayout> <!--Contains arcsin, arccos ,arctan-->
+
+    <LinearLayout
+            android:id="@+id/keyboard_alevel_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/keyboard_alevel_1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_Mat2"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="98dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/matrix"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_integral1"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/integral"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@id/button_alevel_pow"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/power"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_x2"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/x"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_ln1"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="97dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/ln"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+            </LinearLayout> <!-- For matrices and calculus -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_inv2"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="98dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/inv"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_sinh"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/sinh"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_cosh"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/cosh"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_tanh"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/tanh"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_hyp3"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="97dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/hyp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:backgroundTint="#BE003142" />
+
+            </LinearLayout> <!-- Sin, Cos and Tan and inverse-->
+
+
+
+        </LinearLayout> <!--Contains sinh, cosh ,tanh-->
+
+    <LinearLayout
+            android:id="@+id/keyboard_alevel_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/keyboard_alevel_1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_Mat3"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="98dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/matrix"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_integral2"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/integral"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_log1"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/log"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_x3"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/x"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_ln2"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="97dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/ln"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+            </LinearLayout> <!-- For matrices and calculus -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_inv3"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="98dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/inv"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:backgroundTint="#BE003142" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_arsinh"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/arsinh"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_arcosh"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/arcosh"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_artanh"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="72dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/artanh"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    app:backgroundTint="#BE22B6E3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_alevel_hyp2"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="97dp"
+                    android:layout_height="68dp"
+                    android:background="#00BCD4"
+                    android:text="@string/hyp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:backgroundTint="#BE003142" />
+
+            </LinearLayout> <!-- Sin, Cos and Tan and inverse-->
+
+
+
+        </LinearLayout> <!--Contains arsinh, arcosh ,artanh-->
+
+    </ViewFlipper>
+
+    <!-- Layout for the entire keyboard including basic operations -->
+    <LinearLayout
+        android:id="@+id/keyboard_alevel_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/button_alevel_exit"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- contains buttons C (clear single char), (,),/ (division)  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_C"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="105dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/C"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_leftpar"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/leftpar"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_rightpar"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/rightpar"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_div"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="106dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/div"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#8F101010" />
+
+
+
+
+        </LinearLayout>
+        <!--contains buttons 1, 2, 3, * (product) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_one"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="105dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/one"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_two"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/two"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_three"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/three"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_prod"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="106dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/prod"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#8F101010" />
+
+
+
+        </LinearLayout>
+        <!--contains buttons 4, 5, 6, + -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_four"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="105dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/four"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_five"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/five"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_six"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/six"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_add"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="106dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#8F101010" />
+
+
+
+
+        </LinearLayout>
+        <!--contains buttons 7, 8, 9, - (subtraction) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_seven"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="105dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/seven"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_eight"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/eight"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_nine"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/nine"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_sub"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="106dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/sub"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#8F101010" />
+
+
+
+        </LinearLayout>
+        <!--contains buttons 0, . (decimal), sqrt = -->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_zero"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="105dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/zero"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_decimal"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/decimal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_pi"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/pi"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_alevel_equals"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="106dp"
+                android:layout_height="68dp"
+                android:background="#00BCD4"
+                android:text="@string/equal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#8F101010" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_alevel_exit"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_margin="6dp"
+        android:text="@string/exit"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="#0C0B0B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keyboard_alevel_1" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

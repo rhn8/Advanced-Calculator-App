@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraResult">
+
+    <LinearLayout
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/retry">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <TextView
+            android:id="@+id/caminput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/back"
+            android:text="                "
+            android:textSize="102sp"
+            app:layout_constraintBottom_toTopOf="@+id/camresult" />
+        </HorizontalScrollView> <!--contains expression from inputted image -->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <TextView
+            android:id="@+id/camresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/back"
+            android:text="                "
+            android:textSize="102sp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        </HorizontalScrollView>  <!--contains result from expression-->
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/camresult_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Description"
+        android:textSize="16sp"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/results"
+        app:layout_constraintBottom_toTopOf="@id/retry"/> <!-- Description of calculator for usability-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/retry"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="216dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="100dp"
+        android:text="Choose file"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results" /> <!-- Choose file button-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/camresult_exit"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="10dp"
+        android:text="exit"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/retry" /> <!-- Exit button -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

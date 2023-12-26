@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Advanced Calculator App</string>
+    <string name="C">C</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="prod">*</string>
+    <string name="div">/</string>
+    <string name="clear">AC</string>
+    <string name="leftpar">(</string>
+    <string name="rightpar">)</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="equal">=</string>
+    <string name="decimal">.</string>
+    <string name="exit">exit</string>
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="inv">inv</string>
+    <string name="hyp">hyp</string>
+    <string name="ln">ln</string>
+    <string name="integral">\u222b</string>
+    <string name="derivative">y\'</string>
+    <string name="log">log</string>
+    <string name="power">^</string>
+    <string name="matrix">matrix</string>
+    <string name="x">x</string>
+    <string name="pi">\u03c0</string>
+    <string name="sqrt">\u221a</string>
+    <string name="title_activity_camera_result">CameraResult</string>
+    <string name="arcsin">arcsin</string>
+    <string name="arccos">arccos</string>
+    <string name="arctan">arctan</string>
+    <string name="square">x\u00b2</string>
+    <string name="sinh">sinh</string>
+    <string name="cosh">cosh</string>
+    <string name="tanh">tanh</string>
+    <string name="arsinh">arsinh</string>
+    <string name="arcosh">arcosh</string>
+    <string name="artanh">artanh</string>
+    <string name="e">e</string>
+
+    <string name="Description">The first box shows the expression the algorithm thinks is in the picture,
+        while the second shows the solution to the expression- if it is valid. You can choose a new file if necessary.</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+</resources>

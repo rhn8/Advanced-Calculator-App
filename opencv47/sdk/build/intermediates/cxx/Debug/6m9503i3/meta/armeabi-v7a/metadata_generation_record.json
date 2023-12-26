@@ -1,0 +1,184 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 22 min SDK version: armeabi-v7a",
+    "file_": "C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 491824386
+  },
+  {
+    "level_": 0,
+    "message_": "rebuilding JSON C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\.cxx\\Debug\\6m9503i3\\armeabi-v7a\\android_gradle_build.json due to:",
+    "file_": "C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -275680850
+  },
+  {
+    "level_": 0,
+    "message_": "- expected json C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\.cxx\\Debug\\6m9503i3\\armeabi-v7a\\android_gradle_build.json file is not present, will remove stale json folder",
+    "file_": "C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1431969648
+  },
+  {
+    "level_": 0,
+    "message_": "- missing previous command file C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\.cxx\\Debug\\6m9503i3\\armeabi-v7a\\metadata_generation_command.txt, will remove stale json folder",
+    "file_": "C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1530626446
+  },
+  {
+    "level_": 0,
+    "message_": "- command changed from previous, will remove stale json folder",
+    "file_": "C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1165892167
+  },
+  {
+    "level_": 0,
+    "message_": "removing stale contents from \u0027C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\.cxx\\Debug\\6m9503i3\\armeabi-v7a\u0027",
+    "file_": "C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -581700616
+  },
+  {
+    "level_": 0,
+    "message_": "created folder \u0027C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\.cxx\\Debug\\6m9503i3\\armeabi-v7a\u0027",
+    "file_": "C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1789472516
+  },
+  {
+    "level_": 0,
+    "message_": "executing cmake Executable : C:\\Users\\Ruhan\\AppData\\Local\\Android\\Sdk\\cmake\\3.18.1\\bin\\cmake.exe\narguments : \n-HC:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_SYSTEM_VERSION\u003d22\n-DANDROID_PLATFORM\u003dandroid-22\n-DANDROID_ABI\u003darmeabi-v7a\n-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a\n-DANDROID_NDK\u003dC:\\Users\\Ruhan\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\n-DCMAKE_ANDROID_NDK\u003dC:\\Users\\Ruhan\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\n-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\Ruhan\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\build\\cmake\\android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\Ruhan\\AppData\\Local\\Android\\Sdk\\cmake\\3.18.1\\bin\\ninja.exe\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\build\\intermediates\\cxx\\Debug\\6m9503i3\\obj\\armeabi-v7a\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\build\\intermediates\\cxx\\Debug\\6m9503i3\\obj\\armeabi-v7a\n-DCMAKE_BUILD_TYPE\u003dDebug\n-BC:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\.cxx\\Debug\\6m9503i3\\armeabi-v7a\n-GNinja\n-DANDROID_STL\u003dc++_shared\njvmArgs : \n\n",
+    "file_": "C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -453162337
+  },
+  {
+    "level_": 0,
+    "message_": "Executable : C:\\Users\\Ruhan\\AppData\\Local\\Android\\Sdk\\cmake\\3.18.1\\bin\\cmake.exe\narguments : \n-HC:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_SYSTEM_VERSION\u003d22\n-DANDROID_PLATFORM\u003dandroid-22\n-DANDROID_ABI\u003darmeabi-v7a\n-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a\n-DANDROID_NDK\u003dC:\\Users\\Ruhan\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\n-DCMAKE_ANDROID_NDK\u003dC:\\Users\\Ruhan\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\n-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\Ruhan\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\build\\cmake\\android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\Ruhan\\AppData\\Local\\Android\\Sdk\\cmake\\3.18.1\\bin\\ninja.exe\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\build\\intermediates\\cxx\\Debug\\6m9503i3\\obj\\armeabi-v7a\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\build\\intermediates\\cxx\\Debug\\6m9503i3\\obj\\armeabi-v7a\n-DCMAKE_BUILD_TYPE\u003dDebug\n-BC:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\.cxx\\Debug\\6m9503i3\\armeabi-v7a\n-GNinja\n-DANDROID_STL\u003dc++_shared\njvmArgs : \n\n",
+    "file_": "C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1764776802
+  },
+  {
+    "level_": 0,
+    "message_": "Exiting generation of C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\.cxx\\Debug\\6m9503i3\\armeabi-v7a\\compile_commands.json.bin normally",
+    "file_": "C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1863944730
+  },
+  {
+    "level_": 0,
+    "message_": "done executing cmake",
+    "file_": "C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 853545916
+  },
+  {
+    "level_": 0,
+    "message_": "write command file C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\.cxx\\Debug\\6m9503i3\\armeabi-v7a\\metadata_generation_command.txt",
+    "file_": "C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1225454174
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed without problems",
+    "file_": "C:\\Users\\Ruhan\\AndroidStudioProjects\\AdvancedCalculatorApp\\opencv47\\sdk\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1503348296
+  }
+]

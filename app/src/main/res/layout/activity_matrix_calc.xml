@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatrixCalc">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/matinput"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="36dp"
+            android:text="  "
+            android:background="@drawable/back"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Matrices should be written as a list of numbers with dashes
+            indicating new rows. For example, the 3x3 Identitiy matrix should be input as: 1,0,0/0,1,0/0,0,1"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/matinput"
+            tools:ignore="HardcodedText" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/process"
+            android:layout_width="144dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="50dp"
+            android:text="Process"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/info" /> <!-- Process button-->
+
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:id="@+id/expand_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            expandableTextView:maxCollapsedLines="1"
+            expandableTextView:animDuration="2000"
+            app:layout_constraintTop_toBottomOf="@id/process"
+            >
+
+            <TextView
+                android:id="@+id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+            <ImageButton
+                android:id="@+id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_gravity="right" />
+        </com.ms.square.android.expandabletextview.ExpandableTextView> <!-- Answers tab-list -->
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:id="@+id/expand_text_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            expandableTextView:maxCollapsedLines="1"
+            expandableTextView:animDuration="2000"
+            app:layout_constraintTop_toBottomOf="@id/expand_text_view"
+            >
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_gravity="right" />
+        </com.ms.square.android.expandabletextview.ExpandableTextView> <!-- Answers tab-list -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Matrix_calc_exit"
+            android:layout_width="144dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="50dp"
+            android:text="Exit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/expand_text_view1" /> <!-- exit button-->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

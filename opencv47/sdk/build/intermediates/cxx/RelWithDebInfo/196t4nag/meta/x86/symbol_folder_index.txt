@@ -1,0 +1,1 @@
+C:\Users\Ruhan\AndroidStudioProjects\AdvancedCalculatorApp\opencv47\sdk\build\intermediates\cxx\RelWithDebInfo\196t4nag\obj\x86

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gcseCalc">
+
+    <LinearLayout
+        android:id="@+id/display_gcse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toTopOf="@id/keyboard_gcse_2">
+        <!-- Main display for calculator -->
+
+        <!-- Input text box -->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/input_gcse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="64sp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/solution"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/solution_gcse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="25dp"
+            android:text=""
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/keyboard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.688" />
+
+        <!-- Output text box -->
+
+    </LinearLayout>
+
+    <!-- Extra buttons keyboard -->
+
+    <LinearLayout
+        android:id="@+id/keyboard_gcse_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/keyboard_gcse_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_inv2"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="51dp"
+                android:layout_height="72dp"
+                android:background="#00191C"
+                android:text="@string/inv"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                app:backgroundTint="#BE003142" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_arcsin"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/arcsin"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                app:backgroundTint="#BE22B6E3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_arccos"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/arccos"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                app:backgroundTint="#BE22B6E3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_arctan"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/arctan"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                app:backgroundTint="#BE22B6E3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_log"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/log"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="#BE22B6E3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_square"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/square"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                app:backgroundTint="#BE22B6E3" />
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboard_gcse_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/button_gcse_exit"
+        tools:layout_editor_absoluteX="0dp">
+        <!-- Layout for the entire keyboard including operations -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_C"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="106dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/C"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_lp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/leftpar"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_rp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/rightpar"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_div"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="105dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/div"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#8F101010" />
+
+
+        </LinearLayout>
+        <!-- contains buttons C (clear single char), (,),/ (division)  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_1"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="106dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/one"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_2"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/two"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_3"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/three"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_prod"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="105dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/prod"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#8F101010" />
+
+
+        </LinearLayout>
+        <!--contains buttons 1, 2, 3, * (product) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_4"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="106dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/four"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_5"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/five"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_6"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/six"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_add"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="105dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#8F101010" />
+
+
+        </LinearLayout>
+        <!--contains buttons 3, 4, 5, + -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_7"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="106dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/seven"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_8"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/eight"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_9"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/nine"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_sub"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="105dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/sub"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#8F101010" />
+
+
+        </LinearLayout>
+        <!--contains buttons 6, 7, 8, - (subtraction) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_0"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="106dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/zero"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_decimal"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/decimal"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_pi"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="100dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/pi"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                app:backgroundTint="#D3131313" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_gcse_equals"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="105dp"
+                android:layout_height="72dp"
+                android:background="#00BCD4"
+                android:text="@string/equal"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                app:backgroundTint="#8F101010" />
+
+
+        </LinearLayout>
+        <!--contains buttons 9, 0, . (decimal), = -->
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_gcse_exit"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_margin="6dp"
+        android:text="@string/exit"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keyboard_gcse_1" /> <!--Exit button-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
